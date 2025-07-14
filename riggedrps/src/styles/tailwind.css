@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #1A1A1A; /* deep-charcoal */
+    --color-foreground: #FFFFFF; /* white */
+    --color-border: #2D2D2D; /* surface-gray */
+    --color-input: #2D2D2D; /* surface-gray */
+    --color-ring: #F7931E; /* accent-orange */
+    
+    /* Card Colors */
+    --color-card: #2D2D2D; /* surface-gray */
+    --color-card-foreground: #FFFFFF; /* white */
+    
+    /* Popover Colors */
+    --color-popover: #2D2D2D; /* surface-gray */
+    --color-popover-foreground: #FFFFFF; /* white */
+    
+    /* Muted Colors */
+    --color-muted: #2D2D2D; /* surface-gray */
+    --color-muted-foreground: #B0B0B0; /* text-secondary */
+    
+    /* Primary Colors */
+    --color-primary: #FF6B35; /* energetic-orange */
+    --color-primary-foreground: #FFFFFF; /* white */
+    
+    /* Secondary Colors */
+    --color-secondary: #2E86AB; /* cool-blue */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Destructive Colors */
+    --color-destructive: #F44336; /* error-red */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #F7931E; /* bright-highlight */
+    --color-accent-foreground: #1A1A1A; /* deep-charcoal */
+    
+    /* Success Colors */
+    --color-success: #4CAF50; /* standard-green */
+    --color-success-foreground: #FFFFFF; /* white */
+    
+    /* Warning Colors */
+    --color-warning: #FFC107; /* amber-warning */
+    --color-warning-foreground: #1A1A1A; /* deep-charcoal */
+    
+    /* Error Colors */
+    --color-error: #F44336; /* error-red */
+    --color-error-foreground: #FFFFFF; /* white */
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  .font-data {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
